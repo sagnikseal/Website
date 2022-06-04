@@ -66,6 +66,7 @@ body {
 #nav1 li {
     list-style: none;
     padding: 0 20px;
+    position: relative;
 }
 
 #nav1 li a {
@@ -79,4 +80,15 @@ body {
 #nav1 li a:hover,
 #nav1 li a:active {
     color: #088178;
+}
+
+#nav1 li a.active::after,
+#nav1 li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
 }
